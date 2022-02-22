@@ -1,0 +1,13 @@
+spring:
+  jmx.enabled: true
+  jpa:
+    hibernate.ddl-auto: update
+    properties.hibernate:
+      enable_lazy_load_no_trans: true
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      format_sql: true
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/secret
+    username: postgres
+    password: postgres
